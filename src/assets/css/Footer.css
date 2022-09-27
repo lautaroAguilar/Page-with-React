@@ -1,0 +1,99 @@
+.Footer{
+    height: 50vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    "Map Texts Texts Texts"
+    "Map Texts Texts Texts"
+    "Contact Contact Copy Copy"
+    "Contact Contact Copy Copy";
+    background-color: rgba(54, 32, 2, 0.918);
+}
+/* MAP */
+.Footer__map{
+    grid-area: Map;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 4rem;
+
+}
+
+.Footer__map ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;    
+}
+
+.Footer__map ul li{
+    margin-top: 1rem;
+}
+
+.Footer__map ul li a{
+    font-size: medium;
+    transition: .4s ease;
+}
+.Footer__map ul li a:hover{
+    color: white;
+}
+
+ /* CONTACT */
+.Footer__contact{
+    grid-area: Contact;
+    display: flex;
+    align-items: center;
+    margin-left: 4rem;
+}
+
+.Footer__contact--title{
+    height: 2rem;
+    padding-bottom: .5rem;
+    margin: 0 1rem 0 0;
+    font-size: medium;
+    display: flex;
+    align-items: center;
+}
+
+.Footer__contact a{
+    color: black;
+    font-size: 2rem;
+    margin-right: 1rem ;
+    transition: .4s ease;
+}
+
+.Footer__contact a:hover{
+    color: white;
+}
+/* TEXTS */
+.Footer__texts{
+    grid-area: Texts;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+
+.Footer__texts h3{
+    margin-top: 1rem;
+    font-size: x-large;
+}
+
+.Footer__texts p{
+    font-size: small;
+    
+}
+
+/* COPY */
+.Footer__copy{
+    grid-area: Copy;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0 17rem 5rem 0;
+
+
+}

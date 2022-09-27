@@ -1,0 +1,101 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    width: 100%;
+    padding: 1rem 4rem;
+    background-color: transparent;
+    position: absolute;
+    z-index: 5;
+    
+}
+
+.header > h1 {
+    font-size: 1.2rem;
+    align-self: center;
+    cursor: pointer;
+}
+
+/* botonera */
+
+.nav{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.nav ul{
+    width: 18rem;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+.nav li {
+    list-style: none;
+    display: inline-block;
+    padding: 0px 10px;
+    
+}    
+
+.nav a {
+    cursor: pointer;
+    transition: all 0.4s;
+    position: relative;
+}
+
+.nav li a:hover {
+    color: white;
+    border-bottom: 1em;
+}
+
+.nav a::before{
+    content: "";
+    height: 2px;
+    width: 0%;
+    position: absolute;
+    background-color: white;
+    left: 0;
+    bottom: -5px;
+    transition: 0.4s ease-out ;
+
+}
+
+.nav a:hover::before{
+    width: 100%;
+    
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: .9rem;
+    
+}
+
+/* boton */
+
+.cta{
+    width: 5rem;
+    height: 2rem;
+    background-color: black;
+    border-radius: 5rem;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.cta:hover{
+    background-color: white;
+}
+
+.cta a {
+    color: white;
+    font-size: .8rem;
+    
+}
+
+.cta a:hover{
+    color: black ;
+}
