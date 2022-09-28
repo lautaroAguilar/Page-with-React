@@ -6,9 +6,14 @@ export default function Header() {
   return (
     <>
       <div className="header">
-        <Link to="/"><h1>Lautaro Aguilar</h1></Link>
+        <Link to="/">
+          <h1>Lautaro Aguilar</h1>
+        </Link>
         <div className="nav">
           <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
             <li>
               <Link to="/AboutMe">About me</Link>
             </li>
@@ -21,7 +26,7 @@ export default function Header() {
           </ul>
         </div>
         <button className="cta">
-          <a href="">Contact me </a> 
+          <a href="">Contactar</a>
         </button>
       </div>
     </>

@@ -7,12 +7,13 @@ export default function Landing() {
   return (
     <>
       <div className="Landing">
-        
         <video src={video} className="video" autoPlay loop></video>
         <div className="Landing-texts">
           <h2>Hola, soy el perrito de Lautaro Aguilar</h2>
           <p>Frontend Developer | Designer | Creative</p>
-          <Link to="/AboutMe"><h4>Meet up</h4></Link>
+          <Link to="/AboutMe">
+            <h4>Ver más</h4>
+          </Link>
         </div>
       </div>
     </>

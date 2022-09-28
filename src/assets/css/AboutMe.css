@@ -1,0 +1,54 @@
+.AboutMe {
+  height: 110vh;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(247, 219, 177);
+  padding-top: 10vh;
+}
+
+
+
+/* IMAGEN */
+
+.image {
+  height: 60%;
+  display: flex;
+  align-items: center;
+  margin: 10vh 4rem;
+}
+
+.image img {
+  width: 15rem;
+  height: auto;
+  border-radius: 1rem;
+  object-fit: contain;
+}
+
+/* TEXTOS */
+
+.texts{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 70%;
+    height: 60%;
+    margin: 10vh 4rem;
+    
+}
+.texts h2{
+    font-size: 3rem;
+    font-weight: 100;
+    text-align: left;
+}
+
+.texts span{
+    font-weight: 500;
+    font-size: 3rem;
+    color: rgb(65, 43, 2);
+}
+
+.texts__paragraph p{
+    text-align: left;
+    line-height: 1.4rem;
+    margin-bottom: 1rem;
+}
